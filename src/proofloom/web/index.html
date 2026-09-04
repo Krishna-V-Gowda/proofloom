@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proofloom is a verification-first settlement close: AI ranks ambiguity, deterministic financial controls decide, and humans retain authority.">
+  <meta name="theme-color" content="#0d3c32">
+  <title>Proofloom — Close the cash. Keep the proof.</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Proofloom home"><span class="brand-mark">₽</span><span>Proofloom</span></a>
+    <nav aria-label="Primary">
+      <a href="#register">Register</a><a href="#exceptions">Exceptions</a><a href="#failure-lab">Failure lab</a><a href="#evaluation">Evidence</a>
+    </nav>
+    <div class="mode">synthetic / local / no real money</div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Close the cash. Keep the proof.</p>
+        <h1>Every rupee needs a <em>proof path.</em></h1>
+        <p class="lede">Proofloom reconciles payment events, settlements, and bank credits—then refuses to close whenever the evidence or money invariants do not hold.</p>
+        <div class="hero-actions">
+          <button id="runClose" class="button button-primary">Run daily close <span aria-hidden="true">→</span></button>
+          <button id="resetDemo" class="button">Reset deterministic demo</button>
+        </div>
+        <div class="trust-line"><span>✓ no real money movement</span><span>✓ local ambiguity model</span><span>✓ hash-chained audit</span></div>
+      </div>
+      <aside class="gate-card" aria-live="polite">
+        <div class="gate-head"><span>Close gate</span><span id="gatePill" class="pill pill-neutral">NOT RUN</span></div>
+        <div class="ring"><div><strong id="closedRing">0/4</strong><span>settlements<br>proved</span></div></div>
+        <dl><div><dt>Merchant</dt><dd id="merchantName">—</dd></div><div><dt>Period</dt><dd id="period">—</dd></div><div><dt>Records</dt><dd id="recordCount">185</dd></div><div><dt>Audit head</dt><dd id="auditHead">—</dd></div></dl>
+      </aside>
+    </section>
+
+    <section class="metric-band" aria-label="Close summary">
+      <article><span>Packets resolved</span><strong id="straightThrough">0%</strong><small id="straightThroughDetail">Run the close to generate decisions</small></article>
+      <article><span>Review queue</span><strong id="reviewCount">0</strong><small>AI may rank; policy keeps authority</small></article>
+      <article><span>Blocked / unresolved</span><strong id="blockedCount">0</strong><small>Contradictions remain explicit</small></article>
+      <article><span>Matched value</span><strong id="matchedValue">₹0.00</strong><small>Exact integer-paise conservation</small></article>
+    </section>
+
+    <section class="section flow-section">
+      <div class="section-heading split-heading"><div><p class="eyebrow">Hero workflow</p><h2>From noisy events to a defensible close.</h2></div><p>problem → detection → reasoning → policy → action → result → audit</p></div>
+      <div class="flow-grid" aria-label="Proofloom workflow">
+        <article class="active"><span>01</span><strong>Ingest</strong><small>payments, refunds, settlements, bank lines, webhooks</small></article>
+        <article><span>02</span><strong>Normalize</strong><small>deduplicate and order event truth</small></article>
+        <article><span>03</span><strong>Match</strong><small>exact rules first; model only for ambiguity</small></article>
+        <article><span>04</span><strong>Verify</strong><small>money, direction, timing, composition</small></article>
+        <article><span>05</span><strong>Close</strong><small>approve, abstain, or block with evidence</small></article>
+      </div>
+    </section>
+
+    <section class="section grid-two" id="register">
+      <article class="panel panel-wide">
+        <div class="panel-head"><div><p class="eyebrow">Decision register</p><h2>Settlement proof packets.</h2></div><button id="verifyAudit" class="text-button">Verify audit chain</button></div>
+        <div class="table-wrap"><table><thead><tr><th>Settlement</th><th>Method</th><th>Evidence</th><th>Confidence</th><th>Status</th><th></th></tr></thead><tbody id="decisionRows"><tr><td colspan="6" class="empty">Run the daily close to create proof packets.</td></tr></tbody></table></div>
+      </article>
+      <aside class="panel control-panel">
+        <p class="eyebrow">Control boundary</p><h2>AI ranks.<br>Policy decides.</h2>
+        <ol class="authority-list">
+          <li><span class="authority d">D</span><div><strong>Deterministic</strong><p>Event dedupe, money conservation, date windows, exact/split matching, close gate.</p></div></li>
+          <li><span class="authority m">M</span><div><strong>Local model</strong><p>Ranks damaged bank references; no external key and no permission to change facts.</p></div></li>
+          <li><span class="authority h">H</span><div><strong>Human</strong><p>Confirms evidence when a decisive identifier is missing; cannot rewrite financial truth.</p></div></li>
+        </ol>
+        <div class="model-meta"><span>Model version</span><code id="modelVersion">—</code><span>Auto threshold</span><strong id="modelThreshold">—</strong></div>
+      </aside>
+    </section>
+
+    <section class="section grid-two" id="exceptions">
+      <article class="panel panel-wide">
+        <p class="eyebrow">Exception inbox</p><h2>What the system could not prove.</h2>
+        <div id="exceptionList" class="exception-list"><p class="empty">No exceptions yet.</p></div>
+      </article>
+      <aside class="panel">
+        <p class="eyebrow">Source health</p><h2>Evidence intake.</h2>
+        <div id="sourceHealth" class="source-health"></div>
+      </aside>
+    </section>
+
+    <section class="failure-section" id="failure-lab">
+      <div class="section-heading split-heading"><div><p class="eyebrow">Failure lab</p><h2>Make the system fail on purpose.</h2></div><p>detection → safe degradation → recovery → audit</p></div>
+      <div class="failure-grid">
+        <button data-failure="duplicate-webhook"><span>F1</span><strong>Replay a webhook</strong><small>Prove event-ID dedupe prevents a duplicate decision.</small><u>Inject</u></button>
+        <button data-failure="model-outage"><span>F2</span><strong>Take the model offline</strong><small>Exact rules continue; ambiguous records move to review.</small><u>Inject</u></button>
+        <button data-failure="unsafe-adjustment"><span>F3</span><strong>Force a false tie-out</strong><small>Attempt to edit an amount and watch policy block it.</small><u>Inject</u></button>
+        <button data-failure="audit-tamper"><span>F4</span><strong>Tamper with evidence</strong><small>Alter an isolated chain copy and detect the first bad link.</small><u>Inject</u></button>
+      </div>
+      <div id="failureResult" class="failure-result">Choose a failure after running the close.</div>
+    </section>
+
+    <section class="section evaluation" id="evaluation">
+      <div class="section-heading split-heading"><div><p class="eyebrow">Held-out evaluation</p><h2>Measured on unseen synthetic merchants.</h2></div><p id="evaluationScope">merchant-group holdout</p></div>
+      <div id="evaluationCards" class="evaluation-grid"><article><span>Status</span><strong>Load evidence</strong><small>Run `make evaluate` to reproduce the benchmark.</small></article></div>
+      <p class="boundary-note">Synthetic benchmark only. Labels, costs, and outcomes are generated under documented assumptions; no production accuracy, recovered-money, or ROI claim is made.</p>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" hidden><div class="modal-backdrop" data-close-modal></div><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="packetTitle"><button class="modal-close" data-close-modal aria-label="Close proof packet">×</button><p class="eyebrow">Proof packet</p><h2 id="packetTitle">—</h2><div id="packetBody"></div></section></div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <footer><strong>Proofloom</strong><span>Verification-first settlement close · synthetic evidence only</span><span>Krishna V. Gowda</span></footer>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

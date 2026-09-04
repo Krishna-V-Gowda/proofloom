@@ -1,0 +1,37 @@
+[
+  {
+    "amount_paise": 2850990,
+    "bank_line_id": "bank_demo_001",
+    "booked_on": "2026-08-29",
+    "direction": "credit",
+    "reference": "RZP SET_DEMO_01 UTR AX910001"
+  },
+  {
+    "amount_paise": 3898875,
+    "bank_line_id": "bank_demo_002",
+    "booked_on": "2026-08-30",
+    "direction": "credit",
+    "reference": "RZP SETTLEMENT SET_DEM_02 BK84X3"
+  },
+  {
+    "amount_paise": 2000000,
+    "bank_line_id": "bank_demo_003A",
+    "booked_on": "2026-08-30",
+    "direction": "credit",
+    "reference": "RZP SET_DEMO_03 PART A CP557733"
+  },
+  {
+    "amount_paise": 1148599,
+    "bank_line_id": "bank_demo_003B",
+    "booked_on": "2026-08-30",
+    "direction": "credit",
+    "reference": "RZP SET_DEMO_03 PART B CP557733"
+  },
+  {
+    "amount_paise": 3039375,
+    "bank_line_id": "bank_demo_099",
+    "booked_on": "2026-08-31",
+    "direction": "credit",
+    "reference": "NEFT CREDIT UNOWNED 9039"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "owner": "Krishna-V-Gowda",
+  "repository": "proofloom",
+  "managed_by": "KVG_LAB_FINAL",
+  "public_intent": true,
+  "role": "flagship",
+  "identity": "proofloom-verification-first-settlement-close-v1",
+  "version": "1.0.0"
+}

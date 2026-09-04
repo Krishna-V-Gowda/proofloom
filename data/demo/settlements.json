@@ -1,0 +1,30 @@
+[
+  {
+    "currency": "INR",
+    "reported_amount_paise": 2850990,
+    "settled_on": "2026-08-29",
+    "settlement_id": "set_demo_01",
+    "utr": "UTR-AX91-0001"
+  },
+  {
+    "currency": "INR",
+    "reported_amount_paise": 3898875,
+    "settled_on": "2026-08-30",
+    "settlement_id": "set_demo_02",
+    "utr": "UTR-BK84-X3Z2"
+  },
+  {
+    "currency": "INR",
+    "reported_amount_paise": 3148599,
+    "settled_on": "2026-08-29",
+    "settlement_id": "set_demo_03",
+    "utr": "UTR-CP55-7733"
+  },
+  {
+    "currency": "INR",
+    "reported_amount_paise": 3717677,
+    "settled_on": "2026-08-30",
+    "settlement_id": "set_demo_04",
+    "utr": "UTR-DQ77-9914"
+  }
+]

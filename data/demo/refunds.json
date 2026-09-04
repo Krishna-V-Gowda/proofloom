@@ -1,0 +1,44 @@
+[
+  {
+    "amount_paise": 12500,
+    "created_at": "2026-08-27T12:08:00+00:00",
+    "payment_id": "pay_demo_004",
+    "refund_id": "rfnd_demo_001",
+    "settlement_id": "set_demo_01"
+  },
+  {
+    "amount_paise": 10000,
+    "created_at": "2026-08-27T15:07:00+00:00",
+    "payment_id": "pay_demo_011",
+    "refund_id": "rfnd_demo_002",
+    "settlement_id": "set_demo_01"
+  },
+  {
+    "amount_paise": 20000,
+    "created_at": "2026-08-27T18:06:00+00:00",
+    "payment_id": "pay_demo_025",
+    "refund_id": "rfnd_demo_003",
+    "settlement_id": "set_demo_02"
+  },
+  {
+    "amount_paise": 11250,
+    "created_at": "2026-08-27T21:05:00+00:00",
+    "payment_id": "pay_demo_032",
+    "refund_id": "rfnd_demo_004",
+    "settlement_id": "set_demo_02"
+  },
+  {
+    "amount_paise": 18750,
+    "created_at": "2026-08-28T00:04:00+00:00",
+    "payment_id": "pay_demo_046",
+    "refund_id": "rfnd_demo_005",
+    "settlement_id": "set_demo_03"
+  },
+  {
+    "amount_paise": 27500,
+    "created_at": "2026-08-28T06:02:00+00:00",
+    "payment_id": "pay_demo_067",
+    "refund_id": "rfnd_demo_006",
+    "settlement_id": "set_demo_04"
+  }
+]

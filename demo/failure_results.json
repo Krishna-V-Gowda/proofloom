@@ -1,0 +1,32 @@
+{
+  "audit-tamper": {
+    "detail": "copied chain failed at sequence 2; live chain remained valid",
+    "detected": true,
+    "safe": true,
+    "scenario": "audit-tamper"
+  },
+  "duplicate-webhook": {
+    "detail": "suppressed 1 replayed delivery; no duplicate decision created",
+    "detected": true,
+    "safe": true,
+    "scenario": "duplicate-webhook"
+  },
+  "false-tie-out": {
+    "detail": "137-paise composition mismatch remained blocked before bank ownership was considered",
+    "detected": true,
+    "safe": true,
+    "scenario": "false-tie-out"
+  },
+  "model-outage": {
+    "detail": "exact and split paths continued; ambiguous evidence remained open",
+    "detected": true,
+    "safe": true,
+    "scenario": "model-outage"
+  },
+  "unsafe-adjustment": {
+    "detail": "financial facts are immutable; requested amount does not equal settlement amount",
+    "detected": true,
+    "safe": true,
+    "scenario": "unsafe-adjustment"
+  }
+}

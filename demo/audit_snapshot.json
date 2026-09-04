@@ -1,0 +1,228 @@
+{
+  "entries": [
+    {
+      "actor": "system",
+      "correlation_id": "close-20260903",
+      "entry_hash": "e827d1dfbc6192d66f768f5920c54aae1b3353a65479e7992f048c62172585a6",
+      "event_type": "close.started",
+      "payload": {
+        "merchant_id": "merchant_aster_house",
+        "records": 185,
+        "seed": 20260903
+      },
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sequence": 1,
+      "timestamp": "2026-09-03T23:53:48.760711+00:00"
+    },
+    {
+      "actor": "system",
+      "correlation_id": "close-20260903",
+      "entry_hash": "0e65fdaaded4318104fdac7c1e63b6cf65ec8be650ecdc72793e5aab631a307c",
+      "event_type": "events.normalized",
+      "payload": {
+        "accepted": 85,
+        "duplicates": 1,
+        "out_of_order": 1
+      },
+      "previous_hash": "e827d1dfbc6192d66f768f5920c54aae1b3353a65479e7992f048c62172585a6",
+      "sequence": 2,
+      "timestamp": "2026-09-03T23:53:48.760786+00:00"
+    },
+    {
+      "actor": "close-engine",
+      "correlation_id": "close-20260903",
+      "entry_hash": "ed426f69ef091730a7a3845e184a28dab9ef6e3290d29f598b4f13c907f4af1d",
+      "event_type": "decision.created",
+      "payload": {
+        "bank_line_ids": [
+          "bank_demo_001"
+        ],
+        "decision_id": "dec_set_demo_01",
+        "method": "exact_reference",
+        "reason_codes": [
+          "all_deterministic_invariants_pass"
+        ],
+        "settlement_id": "set_demo_01",
+        "status": "auto_matched"
+      },
+      "previous_hash": "0e65fdaaded4318104fdac7c1e63b6cf65ec8be650ecdc72793e5aab631a307c",
+      "sequence": 3,
+      "timestamp": "2026-09-03T23:53:48.760910+00:00"
+    },
+    {
+      "actor": "close-engine",
+      "correlation_id": "close-20260903",
+      "entry_hash": "4199d3d65e87f4a90d89b33e60f8369bcdb8f531e95361ab9140ffcd26404ed9",
+      "event_type": "decision.created",
+      "payload": {
+        "bank_line_ids": [
+          "bank_demo_002"
+        ],
+        "decision_id": "dec_set_demo_02",
+        "method": "model_ranked",
+        "reason_codes": [
+          "human_confirmation_required",
+          "below_auto_threshold"
+        ],
+        "settlement_id": "set_demo_02",
+        "status": "review_required"
+      },
+      "previous_hash": "ed426f69ef091730a7a3845e184a28dab9ef6e3290d29f598b4f13c907f4af1d",
+      "sequence": 4,
+      "timestamp": "2026-09-03T23:53:48.762119+00:00"
+    },
+    {
+      "actor": "close-engine",
+      "correlation_id": "close-20260903",
+      "entry_hash": "b06511e8d5fb24909bf18ace8a8002963ae4113d79650a7f13aeeb9e123d5adf",
+      "event_type": "decision.created",
+      "payload": {
+        "bank_line_ids": [
+          "bank_demo_003A",
+          "bank_demo_003B"
+        ],
+        "decision_id": "dec_set_demo_03",
+        "method": "split_sum",
+        "reason_codes": [
+          "all_deterministic_invariants_pass"
+        ],
+        "settlement_id": "set_demo_03",
+        "status": "auto_matched"
+      },
+      "previous_hash": "4199d3d65e87f4a90d89b33e60f8369bcdb8f531e95361ab9140ffcd26404ed9",
+      "sequence": 5,
+      "timestamp": "2026-09-03T23:53:48.762244+00:00"
+    },
+    {
+      "actor": "close-engine",
+      "correlation_id": "close-20260903",
+      "entry_hash": "c5b9a3a7d10a181e46411cc16bc05086b507e1958f00dd46b2a56e7df4af3f36",
+      "event_type": "decision.created",
+      "payload": {
+        "bank_line_ids": [],
+        "decision_id": "dec_set_demo_04",
+        "method": "none",
+        "reason_codes": [
+          "settlement_composition_mismatch"
+        ],
+        "settlement_id": "set_demo_04",
+        "status": "blocked"
+      },
+      "previous_hash": "b06511e8d5fb24909bf18ace8a8002963ae4113d79650a7f13aeeb9e123d5adf",
+      "sequence": 6,
+      "timestamp": "2026-09-03T23:53:48.762313+00:00"
+    },
+    {
+      "actor": "system",
+      "correlation_id": "close-20260903",
+      "entry_hash": "e26a4e78cdcf6dbe7483a25ad0f24c450e177cabfb644e6696dcb70e41e9b50d",
+      "event_type": "close.completed",
+      "payload": {
+        "blocked": 1,
+        "closed": 2,
+        "exceptions": 3,
+        "review": 1,
+        "unresolved": 0
+      },
+      "previous_hash": "c5b9a3a7d10a181e46411cc16bc05086b507e1958f00dd46b2a56e7df4af3f36",
+      "sequence": 7,
+      "timestamp": "2026-09-03T23:53:48.762590+00:00"
+    },
+    {
+      "actor": "operator",
+      "correlation_id": "failure-duplicate-webhook",
+      "entry_hash": "fb3d937d3fbc03cb0e7cf8d3ecc35396298eda021ce014d1275e7bfaf2b8251b",
+      "event_type": "failure.simulated",
+      "payload": {
+        "detail": "suppressed 1 replayed delivery; no duplicate decision created",
+        "detected": true,
+        "safe": true,
+        "scenario": "duplicate-webhook"
+      },
+      "previous_hash": "e26a4e78cdcf6dbe7483a25ad0f24c450e177cabfb644e6696dcb70e41e9b50d",
+      "sequence": 8,
+      "timestamp": "2026-09-03T23:53:48.763743+00:00"
+    },
+    {
+      "actor": "operator",
+      "correlation_id": "failure-model-outage",
+      "entry_hash": "b2147da4610f919f8770c371bc442bbb3091841e78656690f0add02c86014293",
+      "event_type": "failure.simulated",
+      "payload": {
+        "detail": "exact and split paths continued; ambiguous evidence remained open",
+        "detected": true,
+        "safe": true,
+        "scenario": "model-outage"
+      },
+      "previous_hash": "fb3d937d3fbc03cb0e7cf8d3ecc35396298eda021ce014d1275e7bfaf2b8251b",
+      "sequence": 9,
+      "timestamp": "2026-09-03T23:53:48.764552+00:00"
+    },
+    {
+      "actor": "demo-controller",
+      "correlation_id": "review-dec_set_demo_02",
+      "entry_hash": "cd65fdd1c5b9f48f4f0c2a8c1a372bd7d7a400b9872506c3807d9c9e38208686",
+      "event_type": "review.rejected_unsafe_adjustment",
+      "payload": {
+        "decision_id": "dec_set_demo_02",
+        "immutable_amount_paise": 3898875,
+        "requested_amount_paise": 3898975
+      },
+      "previous_hash": "b2147da4610f919f8770c371bc442bbb3091841e78656690f0add02c86014293",
+      "sequence": 10,
+      "timestamp": "2026-09-03T23:53:48.764595+00:00"
+    },
+    {
+      "actor": "operator",
+      "correlation_id": "failure-unsafe-adjustment",
+      "entry_hash": "4dd2b6c86f4d77e6ee9b095ed84e6627fa4f06ab758a1f6cf89ba8d12a88ed46",
+      "event_type": "failure.simulated",
+      "payload": {
+        "detail": "financial facts are immutable; requested amount does not equal settlement amount",
+        "detected": true,
+        "safe": true,
+        "scenario": "unsafe-adjustment"
+      },
+      "previous_hash": "cd65fdd1c5b9f48f4f0c2a8c1a372bd7d7a400b9872506c3807d9c9e38208686",
+      "sequence": 11,
+      "timestamp": "2026-09-03T23:53:48.764622+00:00"
+    },
+    {
+      "actor": "operator",
+      "correlation_id": "failure-audit-tamper",
+      "entry_hash": "bf21a4979a10e499f9bba89687b3f0454ae03b086070f3dd1ee9feb8f3b2a82e",
+      "event_type": "failure.simulated",
+      "payload": {
+        "detail": "copied chain failed at sequence 2; live chain remained valid",
+        "detected": true,
+        "safe": true,
+        "scenario": "audit-tamper"
+      },
+      "previous_hash": "4dd2b6c86f4d77e6ee9b095ed84e6627fa4f06ab758a1f6cf89ba8d12a88ed46",
+      "sequence": 12,
+      "timestamp": "2026-09-03T23:53:48.765108+00:00"
+    },
+    {
+      "actor": "operator",
+      "correlation_id": "failure-false-tie-out",
+      "entry_hash": "0ae4327e2bac88774869389a19c5922f1b6c9a00d953046a32ca0c78b14a6e06",
+      "event_type": "failure.simulated",
+      "payload": {
+        "detail": "137-paise composition mismatch remained blocked before bank ownership was considered",
+        "detected": true,
+        "safe": true,
+        "scenario": "false-tie-out"
+      },
+      "previous_hash": "bf21a4979a10e499f9bba89687b3f0454ae03b086070f3dd1ee9feb8f3b2a82e",
+      "sequence": 13,
+      "timestamp": "2026-09-03T23:53:48.765139+00:00"
+    }
+  ],
+  "verification": {
+    "checked_entries": 13,
+    "first_invalid_sequence": null,
+    "head_hash": "0ae4327e2bac88774869389a19c5922f1b6c9a00d953046a32ca0c78b14a6e06",
+    "reason": null,
+    "valid": true
+  }
+}

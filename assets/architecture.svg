@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780" role="img" aria-labelledby="title desc">
+<title id="title">Proofloom architecture</title><desc id="desc">Immutable evidence enters deterministic normalization and matching. A local model ranks only ambiguous candidates. Deterministic policy and human review retain authority, while a proof plane records all consequential decisions.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#071614"/><stop offset="1" stop-color="#0d2925"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5c8b80"/></marker></defs>
+<rect width="1400" height="780" rx="28" fill="url(#bg)"/>
+<text x="55" y="60" fill="#71a095" font-family="ui-monospace,monospace" font-size="14" letter-spacing="3">PROOFLOOM / AUTHORITY-SEPARATED ARCHITECTURE</text>
+<text x="55" y="112" fill="#f5fbf9" font-family="Georgia,serif" font-size="42">Candidate discovery is not closing authority.</text>
+<g font-family="system-ui,-apple-system,sans-serif">
+ <rect x="55" y="165" width="250" height="425" rx="20" fill="#0a211e" stroke="#315f56"/>
+ <text x="82" y="205" fill="#70d6be" font-family="ui-monospace,monospace" font-size="12">IMMUTABLE EVIDENCE</text>
+ <g fill="#d9e9e4" font-size="18"><text x="82" y="255">84 payments</text><text x="82" y="300">6 refunds</text><text x="82" y="345">4 settlements</text><text x="82" y="390">5 bank lines</text><text x="82" y="435">86 webhook deliveries</text></g>
+ <path d="M82 468H278" stroke="#315f56"/><text x="82" y="510" fill="#93b1a8" font-size="14">integer paise</text><text x="82" y="540" fill="#93b1a8" font-size="14">frozen domain facts</text><text x="82" y="570" fill="#93b1a8" font-size="14">fixed seed 20260903</text>
+
+ <rect x="375" y="165" width="270" height="180" rx="20" fill="#0b2723" stroke="#5fd7bd"/>
+ <text x="403" y="205" fill="#70d6be" font-family="ui-monospace,monospace" font-size="12">DETERMINISTIC PLANE</text>
+ <text x="403" y="250" fill="#eef9f6" font-size="20">normalize events</text><text x="403" y="285" fill="#eef9f6" font-size="20">exact reference</text><text x="403" y="320" fill="#eef9f6" font-size="20">split-sum search</text>
+
+ <rect x="375" y="410" width="270" height="180" rx="20" fill="#101f2a" stroke="#7fb6ff"/>
+ <text x="403" y="450" fill="#95c6ff" font-family="ui-monospace,monospace" font-size="12">AMBIGUITY PLANE</text>
+ <text x="403" y="495" fill="#eef5ff" font-size="20">local logistic ranker</text><text x="403" y="530" fill="#eef5ff" font-size="20">versioned features</text><text x="403" y="565" fill="#eef5ff" font-size="20">candidate only</text>
+
+ <rect x="725" y="165" width="280" height="425" rx="20" fill="#12221f" stroke="#e8bd62"/>
+ <text x="755" y="205" fill="#efd17e" font-family="ui-monospace,monospace" font-size="12">POLICY / CLOSE GATE</text>
+ <g fill="#f7f3df" font-size="18"><text x="755" y="255">source composition</text><text x="755" y="300">money conservation</text><text x="755" y="345">credit direction</text><text x="755" y="390">booking window</text><text x="755" y="435">confidence + margin</text></g>
+ <path d="M755 468H975" stroke="#655b39"/><text x="755" y="510" fill="#d9c899" font-size="16">AUTO-MATCH</text><text x="755" y="545" fill="#d9c899" font-size="16">REVIEW</text><text x="755" y="580" fill="#ffac88" font-size="16">BLOCK / ABSTAIN</text>
+
+ <rect x="1085" y="165" width="260" height="180" rx="20" fill="#2a1b17" stroke="#ff976d"/>
+ <text x="1115" y="205" fill="#ffb293" font-family="ui-monospace,monospace" font-size="12">HUMAN AUTHORITY</text>
+ <text x="1115" y="255" fill="#fff0e8" font-size="19">approve evidence</text><text x="1115" y="290" fill="#fff0e8" font-size="19">reject evidence</text><text x="1115" y="325" fill="#ffb293" font-size="15">cannot rewrite money</text>
+
+ <rect x="1085" y="410" width="260" height="180" rx="20" fill="#181a22" stroke="#b793f2"/>
+ <text x="1115" y="450" fill="#d0bbff" font-family="ui-monospace,monospace" font-size="12">PROOF PLANE</text>
+ <text x="1115" y="495" fill="#f5efff" font-size="19">evidence packet</text><text x="1115" y="530" fill="#f5efff" font-size="19">reason codes</text><text x="1115" y="565" fill="#f5efff" font-size="19">SHA-256 chain</text>
+
+ <g fill="none" stroke="#5c8b80" stroke-width="2" marker-end="url(#arrow)"><path d="M305 275H375"/><path d="M305 480H375"/><path d="M645 255H725"/><path d="M645 500H725"/><path d="M1005 275H1085"/><path d="M1005 500H1085"/></g>
+</g>
+<rect x="55" y="655" width="1290" height="70" rx="14" fill="#091f1d" stroke="#315f56"/><text x="80" y="698" fill="#c3d8d2" font-family="ui-monospace,monospace" font-size="15">EVENT TRUTH → CANDIDATE EVIDENCE → DETERMINISTIC INVARIANTS → EXPLICIT AUTHORITY → AUDITABLE DECISION</text>
+</svg>

@@ -1,0 +1,758 @@
+[
+  {
+    "amount_paise": 189632,
+    "captured_at": "2026-08-27T09:17:00+00:00",
+    "fee_paise": 5356,
+    "payment_id": "pay_demo_001",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 599
+  },
+  {
+    "amount_paise": 90868,
+    "captured_at": "2026-08-27T09:34:00+00:00",
+    "fee_paise": 2165,
+    "payment_id": "pay_demo_002",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 318
+  },
+  {
+    "amount_paise": 230925,
+    "captured_at": "2026-08-27T09:51:00+00:00",
+    "fee_paise": 2853,
+    "payment_id": "pay_demo_003",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 712
+  },
+  {
+    "amount_paise": 191718,
+    "captured_at": "2026-08-27T10:08:00+00:00",
+    "fee_paise": 4833,
+    "payment_id": "pay_demo_004",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 849
+  },
+  {
+    "amount_paise": 131827,
+    "captured_at": "2026-08-27T10:25:00+00:00",
+    "fee_paise": 4302,
+    "payment_id": "pay_demo_005",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 486
+  },
+  {
+    "amount_paise": 86023,
+    "captured_at": "2026-08-27T10:42:00+00:00",
+    "fee_paise": 3671,
+    "payment_id": "pay_demo_006",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 1056
+  },
+  {
+    "amount_paise": 103100,
+    "captured_at": "2026-08-27T10:59:00+00:00",
+    "fee_paise": 5750,
+    "payment_id": "pay_demo_007",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 730
+  },
+  {
+    "amount_paise": 136181,
+    "captured_at": "2026-08-27T11:16:00+00:00",
+    "fee_paise": 1029,
+    "payment_id": "pay_demo_008",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 212
+  },
+  {
+    "amount_paise": 138256,
+    "captured_at": "2026-08-27T11:33:00+00:00",
+    "fee_paise": 2691,
+    "payment_id": "pay_demo_009",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 725
+  },
+  {
+    "amount_paise": 62611,
+    "captured_at": "2026-08-27T11:50:00+00:00",
+    "fee_paise": 3575,
+    "payment_id": "pay_demo_010",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 704
+  },
+  {
+    "amount_paise": 79537,
+    "captured_at": "2026-08-27T12:07:00+00:00",
+    "fee_paise": 1851,
+    "payment_id": "pay_demo_011",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 266
+  },
+  {
+    "amount_paise": 223229,
+    "captured_at": "2026-08-27T12:24:00+00:00",
+    "fee_paise": 2243,
+    "payment_id": "pay_demo_012",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 956
+  },
+  {
+    "amount_paise": 167083,
+    "captured_at": "2026-08-27T12:41:00+00:00",
+    "fee_paise": 2120,
+    "payment_id": "pay_demo_013",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 474
+  },
+  {
+    "amount_paise": 42227,
+    "captured_at": "2026-08-27T12:58:00+00:00",
+    "fee_paise": 959,
+    "payment_id": "pay_demo_014",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 458
+  },
+  {
+    "amount_paise": 91266,
+    "captured_at": "2026-08-27T13:15:00+00:00",
+    "fee_paise": 1909,
+    "payment_id": "pay_demo_015",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 1084
+  },
+  {
+    "amount_paise": 222057,
+    "captured_at": "2026-08-27T13:32:00+00:00",
+    "fee_paise": 4828,
+    "payment_id": "pay_demo_016",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 698
+  },
+  {
+    "amount_paise": 91820,
+    "captured_at": "2026-08-27T13:49:00+00:00",
+    "fee_paise": 1598,
+    "payment_id": "pay_demo_017",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 732
+  },
+  {
+    "amount_paise": 220565,
+    "captured_at": "2026-08-27T14:06:00+00:00",
+    "fee_paise": 5195,
+    "payment_id": "pay_demo_018",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 475
+  },
+  {
+    "amount_paise": 182353,
+    "captured_at": "2026-08-27T14:23:00+00:00",
+    "fee_paise": 3322,
+    "payment_id": "pay_demo_019",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 619
+  },
+  {
+    "amount_paise": 89441,
+    "captured_at": "2026-08-27T14:40:00+00:00",
+    "fee_paise": 5288,
+    "payment_id": "pay_demo_020",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 220
+  },
+  {
+    "amount_paise": 187731,
+    "captured_at": "2026-08-27T14:57:00+00:00",
+    "fee_paise": 6462,
+    "payment_id": "pay_demo_021",
+    "settlement_id": "set_demo_01",
+    "status": "captured",
+    "tax_paise": 587
+  },
+  {
+    "amount_paise": 199430,
+    "captured_at": "2026-08-27T15:15:00+00:00",
+    "fee_paise": 5607,
+    "payment_id": "pay_demo_022",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 336
+  },
+  {
+    "amount_paise": 143235,
+    "captured_at": "2026-08-27T15:32:00+00:00",
+    "fee_paise": 5588,
+    "payment_id": "pay_demo_023",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 999
+  },
+  {
+    "amount_paise": 279729,
+    "captured_at": "2026-08-27T15:49:00+00:00",
+    "fee_paise": 1992,
+    "payment_id": "pay_demo_024",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 343
+  },
+  {
+    "amount_paise": 96847,
+    "captured_at": "2026-08-27T16:06:00+00:00",
+    "fee_paise": 5480,
+    "payment_id": "pay_demo_025",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 1154
+  },
+  {
+    "amount_paise": 109621,
+    "captured_at": "2026-08-27T16:23:00+00:00",
+    "fee_paise": 5887,
+    "payment_id": "pay_demo_026",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 801
+  },
+  {
+    "amount_paise": 218188,
+    "captured_at": "2026-08-27T16:40:00+00:00",
+    "fee_paise": 3341,
+    "payment_id": "pay_demo_027",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 1319
+  },
+  {
+    "amount_paise": 300890,
+    "captured_at": "2026-08-27T16:57:00+00:00",
+    "fee_paise": 3742,
+    "payment_id": "pay_demo_028",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 215
+  },
+  {
+    "amount_paise": 261642,
+    "captured_at": "2026-08-27T17:14:00+00:00",
+    "fee_paise": 4130,
+    "payment_id": "pay_demo_029",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 1272
+  },
+  {
+    "amount_paise": 281902,
+    "captured_at": "2026-08-27T17:31:00+00:00",
+    "fee_paise": 6312,
+    "payment_id": "pay_demo_030",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 1134
+  },
+  {
+    "amount_paise": 191224,
+    "captured_at": "2026-08-27T17:48:00+00:00",
+    "fee_paise": 1337,
+    "payment_id": "pay_demo_031",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 275
+  },
+  {
+    "amount_paise": 145758,
+    "captured_at": "2026-08-27T18:05:00+00:00",
+    "fee_paise": 1362,
+    "payment_id": "pay_demo_032",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 634
+  },
+  {
+    "amount_paise": 67084,
+    "captured_at": "2026-08-27T18:22:00+00:00",
+    "fee_paise": 3973,
+    "payment_id": "pay_demo_033",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 953
+  },
+  {
+    "amount_paise": 245781,
+    "captured_at": "2026-08-27T18:39:00+00:00",
+    "fee_paise": 3301,
+    "payment_id": "pay_demo_034",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 869
+  },
+  {
+    "amount_paise": 214778,
+    "captured_at": "2026-08-27T18:56:00+00:00",
+    "fee_paise": 5034,
+    "payment_id": "pay_demo_035",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 1278
+  },
+  {
+    "amount_paise": 102723,
+    "captured_at": "2026-08-27T19:13:00+00:00",
+    "fee_paise": 4760,
+    "payment_id": "pay_demo_036",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 773
+  },
+  {
+    "amount_paise": 54100,
+    "captured_at": "2026-08-27T19:30:00+00:00",
+    "fee_paise": 3471,
+    "payment_id": "pay_demo_037",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 821
+  },
+  {
+    "amount_paise": 143935,
+    "captured_at": "2026-08-27T19:47:00+00:00",
+    "fee_paise": 4437,
+    "payment_id": "pay_demo_038",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 1304
+  },
+  {
+    "amount_paise": 142952,
+    "captured_at": "2026-08-27T20:04:00+00:00",
+    "fee_paise": 3430,
+    "payment_id": "pay_demo_039",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 468
+  },
+  {
+    "amount_paise": 303376,
+    "captured_at": "2026-08-27T20:21:00+00:00",
+    "fee_paise": 5767,
+    "payment_id": "pay_demo_040",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 601
+  },
+  {
+    "amount_paise": 263250,
+    "captured_at": "2026-08-27T20:38:00+00:00",
+    "fee_paise": 6564,
+    "payment_id": "pay_demo_041",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 198
+  },
+  {
+    "amount_paise": 271060,
+    "captured_at": "2026-08-27T20:55:00+00:00",
+    "fee_paise": 5485,
+    "payment_id": "pay_demo_042",
+    "settlement_id": "set_demo_02",
+    "status": "captured",
+    "tax_paise": 633
+  },
+  {
+    "amount_paise": 210666,
+    "captured_at": "2026-08-27T21:13:00+00:00",
+    "fee_paise": 1560,
+    "payment_id": "pay_demo_043",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 837
+  },
+  {
+    "amount_paise": 51432,
+    "captured_at": "2026-08-27T21:30:00+00:00",
+    "fee_paise": 3529,
+    "payment_id": "pay_demo_044",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 807
+  },
+  {
+    "amount_paise": 81122,
+    "captured_at": "2026-08-27T21:47:00+00:00",
+    "fee_paise": 2504,
+    "payment_id": "pay_demo_045",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 772
+  },
+  {
+    "amount_paise": 113382,
+    "captured_at": "2026-08-27T22:04:00+00:00",
+    "fee_paise": 4679,
+    "payment_id": "pay_demo_046",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 614
+  },
+  {
+    "amount_paise": 190306,
+    "captured_at": "2026-08-27T22:21:00+00:00",
+    "fee_paise": 2679,
+    "payment_id": "pay_demo_047",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 449
+  },
+  {
+    "amount_paise": 206108,
+    "captured_at": "2026-08-27T22:38:00+00:00",
+    "fee_paise": 4516,
+    "payment_id": "pay_demo_048",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 200
+  },
+  {
+    "amount_paise": 152292,
+    "captured_at": "2026-08-27T22:55:00+00:00",
+    "fee_paise": 1213,
+    "payment_id": "pay_demo_049",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 728
+  },
+  {
+    "amount_paise": 44269,
+    "captured_at": "2026-08-27T23:12:00+00:00",
+    "fee_paise": 1815,
+    "payment_id": "pay_demo_050",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 408
+  },
+  {
+    "amount_paise": 107528,
+    "captured_at": "2026-08-27T23:29:00+00:00",
+    "fee_paise": 4168,
+    "payment_id": "pay_demo_051",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 515
+  },
+  {
+    "amount_paise": 163422,
+    "captured_at": "2026-08-27T23:46:00+00:00",
+    "fee_paise": 5206,
+    "payment_id": "pay_demo_052",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 780
+  },
+  {
+    "amount_paise": 126663,
+    "captured_at": "2026-08-28T00:03:00+00:00",
+    "fee_paise": 3949,
+    "payment_id": "pay_demo_053",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 677
+  },
+  {
+    "amount_paise": 137271,
+    "captured_at": "2026-08-28T00:20:00+00:00",
+    "fee_paise": 3993,
+    "payment_id": "pay_demo_054",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 673
+  },
+  {
+    "amount_paise": 161210,
+    "captured_at": "2026-08-28T00:37:00+00:00",
+    "fee_paise": 3070,
+    "payment_id": "pay_demo_055",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 652
+  },
+  {
+    "amount_paise": 248988,
+    "captured_at": "2026-08-28T00:54:00+00:00",
+    "fee_paise": 1975,
+    "payment_id": "pay_demo_056",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 292
+  },
+  {
+    "amount_paise": 186732,
+    "captured_at": "2026-08-28T01:11:00+00:00",
+    "fee_paise": 4613,
+    "payment_id": "pay_demo_057",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 696
+  },
+  {
+    "amount_paise": 190962,
+    "captured_at": "2026-08-28T01:28:00+00:00",
+    "fee_paise": 2885,
+    "payment_id": "pay_demo_058",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 311
+  },
+  {
+    "amount_paise": 222456,
+    "captured_at": "2026-08-28T01:45:00+00:00",
+    "fee_paise": 5277,
+    "payment_id": "pay_demo_059",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 746
+  },
+  {
+    "amount_paise": 119454,
+    "captured_at": "2026-08-28T02:02:00+00:00",
+    "fee_paise": 1113,
+    "payment_id": "pay_demo_060",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 794
+  },
+  {
+    "amount_paise": 74629,
+    "captured_at": "2026-08-28T02:19:00+00:00",
+    "fee_paise": 5237,
+    "payment_id": "pay_demo_061",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 417
+  },
+  {
+    "amount_paise": 238396,
+    "captured_at": "2026-08-28T02:36:00+00:00",
+    "fee_paise": 3067,
+    "payment_id": "pay_demo_062",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 184
+  },
+  {
+    "amount_paise": 220301,
+    "captured_at": "2026-08-28T02:53:00+00:00",
+    "fee_paise": 952,
+    "payment_id": "pay_demo_063",
+    "settlement_id": "set_demo_03",
+    "status": "captured",
+    "tax_paise": 688
+  },
+  {
+    "amount_paise": 142812,
+    "captured_at": "2026-08-28T03:11:00+00:00",
+    "fee_paise": 1133,
+    "payment_id": "pay_demo_064",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 247
+  },
+  {
+    "amount_paise": 231783,
+    "captured_at": "2026-08-28T03:28:00+00:00",
+    "fee_paise": 1058,
+    "payment_id": "pay_demo_065",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 285
+  },
+  {
+    "amount_paise": 162619,
+    "captured_at": "2026-08-28T03:45:00+00:00",
+    "fee_paise": 908,
+    "payment_id": "pay_demo_066",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 994
+  },
+  {
+    "amount_paise": 239090,
+    "captured_at": "2026-08-28T04:02:00+00:00",
+    "fee_paise": 2806,
+    "payment_id": "pay_demo_067",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 687
+  },
+  {
+    "amount_paise": 107537,
+    "captured_at": "2026-08-28T04:19:00+00:00",
+    "fee_paise": 6939,
+    "payment_id": "pay_demo_068",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 966
+  },
+  {
+    "amount_paise": 287119,
+    "captured_at": "2026-08-28T04:36:00+00:00",
+    "fee_paise": 4765,
+    "payment_id": "pay_demo_069",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 684
+  },
+  {
+    "amount_paise": 192608,
+    "captured_at": "2026-08-28T04:53:00+00:00",
+    "fee_paise": 6349,
+    "payment_id": "pay_demo_070",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 213
+  },
+  {
+    "amount_paise": 154820,
+    "captured_at": "2026-08-28T05:10:00+00:00",
+    "fee_paise": 6379,
+    "payment_id": "pay_demo_071",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 584
+  },
+  {
+    "amount_paise": 203054,
+    "captured_at": "2026-08-28T05:27:00+00:00",
+    "fee_paise": 1243,
+    "payment_id": "pay_demo_072",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 1096
+  },
+  {
+    "amount_paise": 118635,
+    "captured_at": "2026-08-28T05:44:00+00:00",
+    "fee_paise": 6275,
+    "payment_id": "pay_demo_073",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 648
+  },
+  {
+    "amount_paise": 232625,
+    "captured_at": "2026-08-28T06:01:00+00:00",
+    "fee_paise": 4557,
+    "payment_id": "pay_demo_074",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 995
+  },
+  {
+    "amount_paise": 210894,
+    "captured_at": "2026-08-28T06:18:00+00:00",
+    "fee_paise": 6145,
+    "payment_id": "pay_demo_075",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 418
+  },
+  {
+    "amount_paise": 322145,
+    "captured_at": "2026-08-28T06:35:00+00:00",
+    "fee_paise": 3225,
+    "payment_id": "pay_demo_076",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 1054
+  },
+  {
+    "amount_paise": 57376,
+    "captured_at": "2026-08-28T06:52:00+00:00",
+    "fee_paise": 4175,
+    "payment_id": "pay_demo_077",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 1096
+  },
+  {
+    "amount_paise": 138023,
+    "captured_at": "2026-08-28T07:09:00+00:00",
+    "fee_paise": 1330,
+    "payment_id": "pay_demo_078",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 640
+  },
+  {
+    "amount_paise": 134920,
+    "captured_at": "2026-08-28T07:26:00+00:00",
+    "fee_paise": 4574,
+    "payment_id": "pay_demo_079",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 952
+  },
+  {
+    "amount_paise": 132435,
+    "captured_at": "2026-08-28T07:43:00+00:00",
+    "fee_paise": 6857,
+    "payment_id": "pay_demo_080",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 320
+  },
+  {
+    "amount_paise": 292134,
+    "captured_at": "2026-08-28T08:00:00+00:00",
+    "fee_paise": 5854,
+    "payment_id": "pay_demo_081",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 1080
+  },
+  {
+    "amount_paise": 73522,
+    "captured_at": "2026-08-28T08:17:00+00:00",
+    "fee_paise": 2984,
+    "payment_id": "pay_demo_082",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 588
+  },
+  {
+    "amount_paise": 180766,
+    "captured_at": "2026-08-28T08:34:00+00:00",
+    "fee_paise": 1330,
+    "payment_id": "pay_demo_083",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 849
+  },
+  {
+    "amount_paise": 227157,
+    "captured_at": "2026-08-28T08:51:00+00:00",
+    "fee_paise": 3114,
+    "payment_id": "pay_demo_084",
+    "settlement_id": "set_demo_04",
+    "status": "captured",
+    "tax_paise": 364
+  }
+]

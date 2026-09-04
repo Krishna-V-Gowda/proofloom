@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="title desc">
+<title id="title">Proofloom</title><desc id="desc">Verification-first settlement close. Close the cash. Keep the proof.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a19"/><stop offset="1" stop-color="#103b31"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#5bd6bd" stroke-opacity=".08"/></pattern>
+</defs>
+<rect width="1200" height="250" rx="28" fill="url(#bg)"/><rect width="1200" height="250" rx="28" fill="url(#grid)"/>
+<g transform="translate(58 44)">
+ <path d="M26 18h88l28 28v88l-28 28H26L0 136V44z" fill="#0b2925" stroke="#62d7bd" stroke-width="2"/>
+ <path d="M36 57h70M36 82h52M36 107h70" stroke="#d6fff4" stroke-width="8" stroke-linecap="round"/>
+ <path d="M104 121l16 16 32-42" fill="none" stroke="#ff976d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="252" y="112" fill="#f5fbf9" font-family="Georgia,serif" font-size="70" letter-spacing="-2">Proofloom</text>
+<text x="255" y="158" fill="#b8d4cb" font-family="system-ui,-apple-system,sans-serif" font-size="23">Verification-first settlement close</text>
+<text x="255" y="197" fill="#62d7bd" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="2.4">CLOSE THE CASH. KEEP THE PROOF.</text>
+<g transform="translate(890 52)" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">
+ <text x="0" y="0" fill="#73998d">AUTHORITY STACK</text>
+ <circle cx="10" cy="38" r="7" fill="#62d7bd"/><text x="28" y="43" fill="#d6fff4">DETERMINISTIC FACTS</text>
+ <circle cx="10" cy="74" r="7" fill="#7fb6ff"/><text x="28" y="79" fill="#dceaff">MODEL RANKING</text>
+ <circle cx="10" cy="110" r="7" fill="#ff976d"/><text x="28" y="115" fill="#ffe2d5">HUMAN AUTHORITY</text>
+ <path d="M10 45V67M10 81V103" stroke="#49685f"/>
+</g>
+</svg>

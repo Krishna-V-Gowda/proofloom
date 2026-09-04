@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">Proofloom — financial truth under ambiguity</title><desc id="desc">A verification-first settlement close with deterministic financial invariants, model-ranked evidence, human authority, and a deliberately blocked 137-paise contradiction.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061614"/><stop offset=".62" stop-color="#0b2c27"/><stop offset="1" stop-color="#133b31"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#62d7bd" stop-opacity=".2"/><stop offset="1" stop-color="#62d7bd" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#75ccb8" stroke-opacity=".07"/></pattern>
+</defs>
+<rect width="1200" height="600" rx="30" fill="url(#bg)"/><rect width="1200" height="600" rx="30" fill="url(#grid)"/><circle cx="930" cy="280" r="330" fill="url(#glow)"/>
+<text x="64" y="70" fill="#76a79b" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="3">FINANCIAL CONTROL / AI JUDGMENT / HUMAN AUTHORITY</text>
+<text x="60" y="180" fill="#f4fbf8" font-family="Georgia,serif" font-size="82" letter-spacing="-3">Proofloom</text>
+<text x="64" y="233" fill="#c6ddd6" font-family="system-ui,-apple-system,sans-serif" font-size="25">Close the cash. Keep the proof.</text>
+<text x="64" y="295" fill="#91afa6" font-family="system-ui,-apple-system,sans-serif" font-size="18">AI ranks ambiguity. Deterministic invariants own financial truth.</text>
+<g transform="translate(64 355)">
+ <rect width="425" height="150" rx="18" fill="#091f1d" stroke="#2f6559"/>
+ <text x="26" y="35" fill="#7fa99e" font-family="ui-monospace,monospace" font-size="12" letter-spacing="2">DELIBERATE FAILURE</text>
+ <text x="26" y="91" fill="#ff9b73" font-family="Georgia,serif" font-size="48">₹1.37</text>
+ <text x="158" y="88" fill="#f7e6df" font-family="system-ui" font-size="20">evidence mismatch</text>
+ <text x="26" y="125" fill="#a6c3bb" font-family="system-ui" font-size="16">CLOSE REFUSED · PROOF PACKET RETAINED</text>
+</g>
+<g transform="translate(665 102)">
+ <path d="M45 20h155l42 42v154l-42 42H45L3 216V62z" fill="#0a221f" stroke="#61d7bd" stroke-width="2"/>
+ <text x="27" y="54" fill="#8bb3a8" font-family="ui-monospace,monospace" font-size="11" letter-spacing="1.7">SETTLEMENT PROOF PATH</text>
+ <g font-family="system-ui" font-size="15">
+   <circle cx="50" cy="95" r="12" fill="#61d7bd"/><text x="76" y="101" fill="#d6fff4">event truth</text>
+   <circle cx="50" cy="139" r="12" fill="#61d7bd"/><text x="76" y="145" fill="#d6fff4">money conservation</text>
+   <circle cx="50" cy="183" r="12" fill="#7fb6ff"/><text x="76" y="189" fill="#dceaff">candidate evidence</text>
+   <circle cx="50" cy="227" r="12" fill="#ff976d"/><text x="76" y="233" fill="#ffe2d5">explicit authority</text>
+ </g>
+ <path d="M50 107V127M50 151V171M50 195V215" stroke="#497269" stroke-width="2"/>
+</g>
+<g transform="translate(950 355)" font-family="ui-monospace,monospace" text-anchor="end">
+ <text x="175" y="0" fill="#7fa99e" font-size="12">HELD-OUT SYNTHETIC POLICY</text>
+ <text x="175" y="55" fill="#f4fbf8" font-size="44">76.8%</text>
+ <text x="175" y="82" fill="#a6c3bb" font-size="14">straight-through</text>
+ <text x="175" y="125" fill="#f4fbf8" font-size="28">0 false auto-matches</text>
+ <text x="175" y="151" fill="#a6c3bb" font-size="12">168 settlements · 1,008 pairs</text>
+</g>
+</svg>

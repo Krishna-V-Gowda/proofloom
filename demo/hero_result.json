@@ -1,0 +1,302 @@
+{
+  "audit": {
+    "entries": 7,
+    "head": "e26a4e78cdcf6dbe",
+    "valid": true
+  },
+  "decisions": [
+    {
+      "bank_line_ids": [
+        "bank_demo_001"
+      ],
+      "confidence": 1.0,
+      "decision_id": "dec_set_demo_01",
+      "evidence": [
+        {
+          "record_id": "bank_demo_001",
+          "source": "bank_statement",
+          "summary": "RZP SET_DEMO_01 UTR AX910001"
+        }
+      ],
+      "expected_amount_paise": 2850990,
+      "invariants": [
+        {
+          "detail": "captured payment gross minus refunds, processing fees and tax must equal the reported settlement amount",
+          "expected": "2850990",
+          "name": "settlement_composition",
+          "observed": "2850990",
+          "passed": true
+        },
+        {
+          "detail": "selected incoming bank credits must sum exactly to the reported settlement amount",
+          "expected": "2850990",
+          "name": "bank_money_conservation",
+          "observed": "2850990",
+          "passed": true
+        },
+        {
+          "detail": "a debit or empty candidate set cannot own an incoming settlement",
+          "expected": "credit",
+          "name": "incoming_credit_direction",
+          "observed": "credit",
+          "passed": true
+        },
+        {
+          "detail": "selected credits must be booked within the configured settlement window",
+          "expected": "within 3 days",
+          "name": "booking_window",
+          "observed": "2026-08-29",
+          "passed": true
+        }
+      ],
+      "method": "exact_reference",
+      "model_version": null,
+      "observed_amount_paise": 2850990,
+      "reason_codes": [
+        "all_deterministic_invariants_pass"
+      ],
+      "reviewed_at": null,
+      "reviewer": null,
+      "settlement_id": "set_demo_01",
+      "status": "auto_matched"
+    },
+    {
+      "bank_line_ids": [
+        "bank_demo_002"
+      ],
+      "confidence": 0.9895101929337122,
+      "decision_id": "dec_set_demo_02",
+      "evidence": [
+        {
+          "record_id": "bank_demo_002",
+          "source": "model_candidate",
+          "summary": "Ranked from amount, date and reference evidence; runner-up 0.0%."
+        },
+        {
+          "record_id": "bank_demo_002",
+          "source": "bank_statement",
+          "summary": "RZP SETTLEMENT SET_DEM_02 BK84X3"
+        }
+      ],
+      "expected_amount_paise": 3898875,
+      "invariants": [
+        {
+          "detail": "captured payment gross minus refunds, processing fees and tax must equal the reported settlement amount",
+          "expected": "3898875",
+          "name": "settlement_composition",
+          "observed": "3898875",
+          "passed": true
+        },
+        {
+          "detail": "selected incoming bank credits must sum exactly to the reported settlement amount",
+          "expected": "3898875",
+          "name": "bank_money_conservation",
+          "observed": "3898875",
+          "passed": true
+        },
+        {
+          "detail": "a debit or empty candidate set cannot own an incoming settlement",
+          "expected": "credit",
+          "name": "incoming_credit_direction",
+          "observed": "credit",
+          "passed": true
+        },
+        {
+          "detail": "selected credits must be booked within the configured settlement window",
+          "expected": "within 3 days",
+          "name": "booking_window",
+          "observed": "2026-08-30",
+          "passed": true
+        },
+        {
+          "detail": "candidate probability must clear the precision-oriented automation threshold",
+          "expected": ">=0.9950",
+          "name": "model_confidence",
+          "observed": "0.9895",
+          "passed": false
+        },
+        {
+          "detail": "the leading candidate must be decisively separated from the runner-up",
+          "expected": ">=0.0200",
+          "name": "score_margin",
+          "observed": "0.9892",
+          "passed": true
+        }
+      ],
+      "method": "model_ranked",
+      "model_version": "pl-local-logit-a441578efaa4",
+      "observed_amount_paise": 3898875,
+      "reason_codes": [
+        "human_confirmation_required",
+        "below_auto_threshold"
+      ],
+      "reviewed_at": null,
+      "reviewer": null,
+      "settlement_id": "set_demo_02",
+      "status": "review_required"
+    },
+    {
+      "bank_line_ids": [
+        "bank_demo_003A",
+        "bank_demo_003B"
+      ],
+      "confidence": 1.0,
+      "decision_id": "dec_set_demo_03",
+      "evidence": [
+        {
+          "record_id": "bank_demo_003A",
+          "source": "bank_statement",
+          "summary": "RZP SET_DEMO_03 PART A CP557733"
+        },
+        {
+          "record_id": "bank_demo_003B",
+          "source": "bank_statement",
+          "summary": "RZP SET_DEMO_03 PART B CP557733"
+        }
+      ],
+      "expected_amount_paise": 3148599,
+      "invariants": [
+        {
+          "detail": "captured payment gross minus refunds, processing fees and tax must equal the reported settlement amount",
+          "expected": "3148599",
+          "name": "settlement_composition",
+          "observed": "3148599",
+          "passed": true
+        },
+        {
+          "detail": "selected incoming bank credits must sum exactly to the reported settlement amount",
+          "expected": "3148599",
+          "name": "bank_money_conservation",
+          "observed": "3148599",
+          "passed": true
+        },
+        {
+          "detail": "a debit or empty candidate set cannot own an incoming settlement",
+          "expected": "credit",
+          "name": "incoming_credit_direction",
+          "observed": "credit,credit",
+          "passed": true
+        },
+        {
+          "detail": "selected credits must be booked within the configured settlement window",
+          "expected": "within 3 days",
+          "name": "booking_window",
+          "observed": "2026-08-30,2026-08-30",
+          "passed": true
+        }
+      ],
+      "method": "split_sum",
+      "model_version": null,
+      "observed_amount_paise": 3148599,
+      "reason_codes": [
+        "all_deterministic_invariants_pass"
+      ],
+      "reviewed_at": null,
+      "reviewer": null,
+      "settlement_id": "set_demo_03",
+      "status": "auto_matched"
+    },
+    {
+      "bank_line_ids": [],
+      "confidence": null,
+      "decision_id": "dec_set_demo_04",
+      "evidence": [
+        {
+          "record_id": "set_demo_04",
+          "source": "payments_and_refunds",
+          "summary": "Computed from captured payments minus refunds, fees and tax."
+        },
+        {
+          "record_id": "set_demo_04",
+          "source": "settlement",
+          "summary": "Reported amount differs from expected source net by 137 paise."
+        }
+      ],
+      "expected_amount_paise": 3717814,
+      "invariants": [
+        {
+          "detail": "captured payment gross minus refunds, processing fees and tax must equal the reported settlement amount",
+          "expected": "3717814",
+          "name": "settlement_composition",
+          "observed": "3717677",
+          "passed": false
+        }
+      ],
+      "method": "none",
+      "model_version": null,
+      "observed_amount_paise": 3717677,
+      "reason_codes": [
+        "settlement_composition_mismatch"
+      ],
+      "reviewed_at": null,
+      "reviewer": null,
+      "settlement_id": "set_demo_04",
+      "status": "blocked"
+    }
+  ],
+  "exceptions": [
+    {
+      "code": "ambiguous_reference_requires_human",
+      "detail": "Candidate bank_demo_002 ranked first at 99.0%; financial facts remain immutable.",
+      "exception_id": "exc_review_set_demo_02",
+      "resolved": false,
+      "settlement_id": "set_demo_02",
+      "severity": "review",
+      "title": "Damaged bank reference needs review confirmation"
+    },
+    {
+      "code": "settlement_composition_mismatch",
+      "detail": "Expected 3717814 paise from source events, but the settlement reports 3717677 paise; delta 137 paise.",
+      "exception_id": "exc_comp_set_demo_04",
+      "resolved": false,
+      "settlement_id": "set_demo_04",
+      "severity": "critical",
+      "title": "Settlement composition does not conserve money"
+    },
+    {
+      "code": "unowned_bank_credit",
+      "detail": "bank_demo_099 remains outside every accepted proof path.",
+      "exception_id": "exc_unowned_bank_demo_099",
+      "resolved": false,
+      "settlement_id": null,
+      "severity": "review",
+      "title": "Bank credit has no proven settlement owner"
+    }
+  ],
+  "failure_results": {},
+  "gate": "blocked",
+  "merchant": {
+    "id": "merchant_aster_house",
+    "name": "Aster House Goods"
+  },
+  "mode": "synthetic-local",
+  "model": {
+    "authority": "candidate ranking only",
+    "online": true,
+    "threshold": 0.984691049824192,
+    "version": "pl-local-logit-a441578efaa4"
+  },
+  "normalization": {
+    "accepted_webhooks": 85,
+    "duplicate_events": 1,
+    "out_of_order_events": 1
+  },
+  "period": "2026-08-29",
+  "project": "Proofloom",
+  "seed": 20260903,
+  "source_counts": {
+    "bank_lines": 5,
+    "payments": 84,
+    "records": 185,
+    "refunds": 6,
+    "settlements": 4,
+    "webhook_deliveries": 86
+  },
+  "summary": {
+    "blocked": 1,
+    "closed": 2,
+    "matched_value_paise": 5999589,
+    "review": 1,
+    "unresolved": 0
+  }
+}
