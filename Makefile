@@ -1,6 +1,9 @@
-PYTHON ?= python3
+SYSTEM_PYTHON ?= python3
 VENV ?= .venv
 BIN := $(VENV)/bin
+PYTHON := $(if $(wildcard $(BIN)/python),$(BIN)/python,$(SYSTEM_PYTHON))
+HOST ?= 127.0.0.1
+PORT ?= 8000
 
 .PHONY: setup test seed demo evaluate benchmark security validate run clean
 
@@ -32,7 +35,7 @@ validate:
 	bash scripts/validate_release.sh
 
 run:
-	PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src $(PYTHON) -m proofloom.cli serve --host 127.0.0.1 --port 8000
+	PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src $(PYTHON) -m proofloom.cli serve --host $(HOST) --port $(PORT)
 
 clean:
 	rm -rf $(VENV) build dist .pytest_cache .mypy_cache .ruff_cache htmlcov
