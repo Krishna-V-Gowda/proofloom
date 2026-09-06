@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
+
+PYTHON="${PYTHON:-python3}"
+export PYTHONDONTWRITEBYTECODE="${PYTHONDONTWRITEBYTECODE:-1}"
+
+if ! "$PYTHON" -c 'import sys; print(sys.executable)' >/dev/null 2>&1; then
+    printf '%s\n' "invalid Python interpreter: $PYTHON" >&2
+    exit 1
+fi
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TMP="$(mktemp -d "${TMPDIR:-/tmp}/proofloom-verify.XXXXXX")"
 trap 'rm -rf "$TMP"' EXIT
@@ -13,7 +21,7 @@ for path in README.md pyproject.toml requirements-lock.txt src/proofloom/engine.
 done
 
 printf '%s\n' '[2/9] source compilation without bytecode'
-python3 - <<'PY'
+"$PYTHON" - <<'PY'
 from pathlib import Path
 paths = sorted(Path('src').rglob('*.py')) + sorted(Path('tests').rglob('*.py')) + sorted(Path('scripts').rglob('*.py'))
 for path in paths:
@@ -22,11 +30,11 @@ print(f'compiled {len(paths)} Python files')
 PY
 
 printf '%s\n' '[3/9] behavior, API, audit, adapter and evaluation tests'
-python3 -m pytest -q -p no:cacheprovider
+"$PYTHON" -m pytest -q -p no:cacheprovider
 
 printf '%s\n' '[4/9] deterministic 185-record seed'
-python3 -m proofloom.cli export-data --output "$TMP/data" >/dev/null
-python3 - "$TMP/data/manifest.json" <<'PY'
+"$PYTHON" -m proofloom.cli export-data --output "$TMP/data" >/dev/null
+"$PYTHON" - "$TMP/data/manifest.json" <<'PY'
 import json, sys
 value=json.load(open(sys.argv[1]))
 assert value['records']==185
@@ -34,8 +42,8 @@ print('seed inventory verified')
 PY
 
 printf '%s\n' '[5/9] held-out evaluation reproduction'
-python3 -m proofloom.cli evaluate --output "$TMP/evaluation" --bootstrap-resamples 500 >/dev/null
-python3 - "$TMP/evaluation/results.json" evaluation/results.json <<'PY'
+"$PYTHON" -m proofloom.cli evaluate --output "$TMP/evaluation" --bootstrap-resamples 500 >/dev/null
+"$PYTHON" - "$TMP/evaluation/results.json" evaluation/results.json <<'PY'
 import json, math, sys
 
 fresh=json.load(open(sys.argv[1]))
@@ -82,14 +90,14 @@ print('retained evaluation reproduced semantically')
 PY
 
 printf '%s\n' '[6/9] bounded benchmark smoke'
-python3 -m proofloom.cli benchmark --output "$TMP/benchmarks" >/dev/null
+"$PYTHON" -m proofloom.cli benchmark --output "$TMP/benchmarks" >/dev/null
 test -s "$TMP/benchmarks/results.json"
 
 printf '%s\n' '[7/9] public-source security scan'
-python3 scripts/verify_public_tree.py .
+"$PYTHON" scripts/verify_public_tree.py .
 
 printf '%s\n' '[8/9] documentation and asset links'
-python3 - <<'PY'
+"$PYTHON" - <<'PY'
 from pathlib import Path
 import re
 root=Path('.')
@@ -104,9 +112,9 @@ print('relative Markdown links verified')
 PY
 
 printf '%s\n' '[9/9] generated-residue guard'
-if find . -type d \( -name __pycache__ -o -name .pytest_cache -o -name .venv -o -name node_modules -o -name .next -o -name build -o -name dist \) -print -quit | grep -q .; then
-  echo 'generated residue detected' >&2
-  find . -type d \( -name __pycache__ -o -name .pytest_cache -o -name .venv -o -name node_modules -o -name .next -o -name build -o -name dist \) -print >&2
+if find . -path './.venv' -prune -o -type d \( -name __pycache__ -o -name .pytest_cache -o -name node_modules -o -name .next -o -name build -o -name dist \) -print -quit | grep -q .; then
+  echo 'generated residue detected outside managed .venv' >&2
+  find . -path './.venv' -prune -o -type d \( -name __pycache__ -o -name .pytest_cache -o -name node_modules -o -name .next -o -name build -o -name dist \) -print >&2
   exit 1
 fi
 printf '%s\n' 'Proofloom release verification passed.'

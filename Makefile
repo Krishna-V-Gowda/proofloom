@@ -32,7 +32,7 @@ security:
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) scripts/verify_public_tree.py .
 
 validate:
-	bash scripts/validate_release.sh
+	PYTHON="$(PYTHON)" bash scripts/validate_release.sh
 
 run:
 	PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src $(PYTHON) -m proofloom.cli serve --host $(HOST) --port $(PORT)
