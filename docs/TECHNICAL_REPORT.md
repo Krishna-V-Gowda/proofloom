@@ -96,7 +96,7 @@ The retained local environment measured approximately 15,120 candidate pairs/s f
 
 ## 8. Security boundary
 
-The prototype contains synthetic data only. Optional Razorpay adapter credentials are environment-only; non-test-looking key IDs are rejected. Webhook signatures use raw-body HMAC-SHA256 and constant-time comparison. The public tree is scanned for high-confidence credentials and private keys.
+The prototype contains synthetic data only. Webhook signatures use raw-body HMAC-SHA256 and constant-time comparison. The public tree is scanned for high-confidence credentials and private keys.
 
 Authentication, authorization, durable tenant isolation, encrypted storage, rate limiting, externally anchored audit storage, regulatory certification, and production incident response are not implemented.
 

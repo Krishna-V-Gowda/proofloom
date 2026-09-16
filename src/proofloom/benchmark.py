@@ -83,7 +83,7 @@ def run_benchmarks(output_dir: str | Path) -> dict[str, Any]:
 | Close 4 settlements / {dataset.source_record_count} source records | {close_result['repetitions']} | {close_result['median_seconds']*1000:.3f} ms | {close_result['p95_seconds']*1000:.3f} ms | includes candidate scoring; in-memory only |
 | In-process overview API | {api_result['repetitions']} | {api_result['median_seconds']*1000:.3f} ms | {api_result['p95_seconds']*1000:.3f} ms | excludes network and browser rendering |
 
-Five warm-ups preceded every workload. Raw repetitions are retained in `results.json`. These numbers are reproducible local observations—not a production capacity claim, service-level objective, or comparison with Razorpay infrastructure.
+Five warm-ups preceded every workload. Raw repetitions are retained in `results.json`. These numbers are reproducible local observations—not a production capacity claim, service-level objective, or comparison with external payment infrastructure.
 """
     (output / "results.md").write_text(text, encoding="utf-8")
     return result

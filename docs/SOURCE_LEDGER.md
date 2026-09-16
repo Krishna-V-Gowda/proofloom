@@ -1,21 +1,17 @@
 # Source and protocol ledger
 
-The prototype uses official Razorpay sources to define its integration boundary. The repository does not claim conformance beyond the documented, tested adapter behavior.
+Proofloom documents protocol assumptions and external technical concepts separately from its own executable
+implementation and evaluation. External references do not manufacture any benchmark or evaluation metric.
 
-| Source | URL | Design fact used |
-|---|---|---|
-| Razorpay AI Buildathon | https://razorpay.com/buildathon/ | AI Finance Controller track; finance-loop, synthetic-record, accuracy/throughput/exception expectations |
-| Razorpay API reference | https://razorpay.com/docs/api/ | REST/JSON and Basic Auth boundary |
-| API authentication | https://razorpay.com/docs/api/authentication/ | test/live credential distinction and secret protection |
-| Settlements API | https://razorpay.com/docs/api/settlements/ | settlement and reconciliation domain boundary |
-| Settlement recon details | https://razorpay.com/docs/api/settlements/fetch-recon/ | combined recon entities, identifiers, UTR, and currency subunits |
-| Webhook validation | https://razorpay.com/docs/webhooks/validate-test/ | raw-body HMAC-SHA256, event-ID deduplication, possible out-of-order delivery |
-| Webhook best practices | https://razorpay.com/docs/webhooks/best-practices/ | asynchronous retries and at-least-once delivery behavior |
-| About webhooks | https://razorpay.com/docs/webhooks/ | event-notification boundary |
+| Source area | Design fact used |
+|---|---|
+| Payment settlement/reconciliation protocols | settlement identifiers, reconciliation entities, and currency subunits |
+| Webhook delivery protocols | raw-body signature verification, event-ID deduplication, and possible out-of-order delivery |
+| Reliable integration patterns | asynchronous retries and at-least-once delivery behavior |
 
 ## Source-handling rules
 
-- Official documentation owns protocol and API statements.
+- External technical references support protocol and API-design statements.
 - No external source manufactures a benchmark or evaluation metric.
 - The committed generator and executable evaluation own every reported synthetic result.
-- No Razorpay trademark, affiliation, production deployment, or merchant-data claim is implied.
+- Proofloom does not claim production deployment or merchant-data access.

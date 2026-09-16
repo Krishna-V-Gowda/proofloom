@@ -18,7 +18,7 @@ patterns = [
     ("GitHub token", re.compile(r"gh[pousr]_[A-Za-z0-9_]{30,}")),
     ("Google API key", re.compile(r"AIza[0-9A-Za-z_-]{30,}")),
     ("private key", re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")),
-    ("Razorpay live key", re.compile(r"rzp_live_[A-Za-z0-9]+")),
+    ("Live payment key", re.compile(r"rzp_live_[A-Za-z0-9]+")),
 ]
 failures: list[str] = []
 scanned = 0

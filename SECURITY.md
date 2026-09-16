@@ -7,7 +7,6 @@ Report suspected vulnerabilities privately to the repository owner. Do not inclu
 ## Implemented boundaries
 
 - all financial equality uses integer paise;
-- optional Razorpay credentials are environment-only and test keys are enforced;
 - raw-body HMAC-SHA256 webhook verification is implemented;
 - duplicate event IDs are suppressed and event occurrence time is normalized;
 - model output cannot alter financial facts or bypass deterministic invariants;

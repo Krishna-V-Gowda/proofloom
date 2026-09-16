@@ -9,7 +9,6 @@ Proofloom is a verification-first settlement-close workspace for merchant financ
 - **Primary user:** Finance controller or reconciliation analyst responsible for daily merchant cash close.
 - **Secondary user:** Payments operations engineer investigating event or integration failures.
 - **Buyer/stakeholder:** Finance leader, payments product owner, internal audit/control owner.
-- **Reviewer in this submission:** Razorpay engineer/product leader assessing AI judgment and execution.
 
 ## 3. Current workflow
 
@@ -68,7 +67,7 @@ The event stream also contains one duplicate webhook and one out-of-order author
 
 - Moving real money or writing accounting entries.
 - Claiming production merchant accuracy or regulatory certification.
-- Replacing a general ledger, bank feed, data warehouse or Razorpay Dashboard.
+- Replacing a general ledger, bank feed, or data warehouse.
 - Using an LLM as a universal reconciliation engine.
 - Hiding unresolved cases to maximize a vanity match rate.
 - Supporting every bank format, currency or settlement product in the first wedge.
@@ -153,7 +152,7 @@ The event stream also contains one duplicate webhook and one out-of-order author
 
 ## 13. System boundary
 
-Proofloom consumes official-shaped/synthetic evidence and produces close decisions and proof packets. It does not post a settlement, journal, payout, refund or bank instruction. The optional Razorpay adapter defines how authenticated test-mode reads and webhook verification fit the architecture, while the shipped demo remains credentials-free.
+Proofloom consumes official-shaped/synthetic evidence and produces close decisions and proof packets. It does not post a settlement, journal, payout, refund or bank instruction. The shipped demo remains credentials-free.
 
 ## 14. Assumptions
 

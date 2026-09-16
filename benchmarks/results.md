@@ -14,4 +14,4 @@
 | Close 4 settlements / 185 source records | 20 | 1.638 ms | 2.190 ms | includes candidate scoring; in-memory only |
 | In-process overview API | 30 | 1.468 ms | 5.156 ms | excludes network and browser rendering |
 
-Five warm-ups preceded every workload. Raw repetitions are retained in `results.json`. These numbers are reproducible local observations—not a production capacity claim, service-level objective, or comparison with Razorpay infrastructure.
+Five warm-ups preceded every workload. Raw repetitions are retained in `results.json`. These numbers are reproducible local observations—not a production capacity claim, service-level objective, or comparison with external payment infrastructure.

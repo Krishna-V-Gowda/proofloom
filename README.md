@@ -146,7 +146,7 @@ make run
 
 Open `http://127.0.0.1:8000`, then run the daily close and inspect the four proof packets.
 
-The local demo requires **no Razorpay key and no external model provider**.
+The local demo requires **no external payment credentials and no external model provider**.
 
 ### Reproduce the evidence
 
@@ -184,12 +184,6 @@ demo/               hero result, audit snapshot, failure outputs, and runbook
 docs/               architecture, methodology, threat model, ADRs, report
 scripts/            release validation and public-tree security gate
 ```
-
-## Razorpay boundary
-
-`src/proofloom/razorpay_adapter.py` implements environment-only Basic Auth configuration, a hard test-key guard, raw-body HMAC-SHA256 webhook verification, typed reconciliation request construction, and retry-safe error mapping boundaries.
-
-The committed demo intentionally uses official-shape synthetic fixtures. It does **not** execute real payments, refunds, payouts, settlements, or bank actions. Proofloom is an independent Buildathon project, not an official Razorpay product.
 
 ## Honest limitations
 
