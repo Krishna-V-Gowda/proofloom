@@ -21,7 +21,7 @@ for path in paths:
 print(f'compiled {len(paths)} Python files')
 PY
 
-printf '%s\n' '[3/9] behavior, API, audit, adapter and evaluation tests'
+printf '%s\n' '[3/9] behavior, API, audit and evaluation tests'
 python3 -m pytest -q -p no:cacheprovider
 
 printf '%s\n' '[4/9] deterministic 185-record seed'
@@ -104,9 +104,11 @@ print('relative Markdown links verified')
 PY
 
 printf '%s\n' '[9/9] generated-residue guard'
-if find . -type d \( -name __pycache__ -o -name .pytest_cache -o -name .venv -o -name node_modules -o -name .next -o -name build -o -name dist \) -print -quit | grep -q .; then
+# The local .venv created by `make setup` is gitignored and never shipped, so it is skipped.
+RESIDUE=(find . -path ./.venv -prune -o -path ./.git -prune -o -type d \( -name __pycache__ -o -name .pytest_cache -o -name venv -o -name node_modules -o -name .next -o -name build -o -name dist \) -print)
+if "${RESIDUE[@]}" | grep -q .; then
   echo 'generated residue detected' >&2
-  find . -type d \( -name __pycache__ -o -name .pytest_cache -o -name .venv -o -name node_modules -o -name .next -o -name build -o -name dist \) -print >&2
+  "${RESIDUE[@]}" >&2
   exit 1
 fi
 printf '%s\n' 'Proofloom release verification passed.'

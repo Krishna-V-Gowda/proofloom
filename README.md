@@ -151,7 +151,7 @@ The local demo requires **no external payment credentials and no external model 
 ### Reproduce the evidence
 
 ```bash
-make test        # behavior, API, policy, adapter, audit, and evaluation tests
+make test        # behavior, API, policy, audit, and evaluation tests
 make seed        # export the fixed 185-record hero dataset
 make evaluate    # regenerate held-out metrics, predictions, and figures
 make benchmark   # run bounded local timing measurements
@@ -176,7 +176,7 @@ These include local process overhead and exclude production networking, persiste
 ```text
 src/proofloom/      immutable domain facts, generator, model, policy,
                     close engine, audit chain, service, API, and UI
-tests/              domain, engine, service, API, adapter, audit, and evaluation
+tests/              domain, engine, service, API, audit, and evaluation
 data/demo/          fixed-seed 185-record exported evidence
 evaluation/         protocol, predictions, metrics, plots, and raw result
 benchmarks/         bounded local timings and raw repetitions
