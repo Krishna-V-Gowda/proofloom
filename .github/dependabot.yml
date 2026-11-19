@@ -1,18 +1,21 @@
+# One grouped pull request per ecosystem each month, minor and patch updates only.
+# Security fixes still arrive immediately through Dependabot security updates.
 version: 2
 updates:
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
     groups:
       github-actions:
-        patterns:
-          - "*"
-- package-ecosystem: pip
-  directory: "/"
-  schedule:
-    interval: weekly
-  groups:
-    pip-dependencies:
-      patterns:
-        - "*"
+        patterns: ["*"]
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: monthly
+    groups:
+      python:
+        patterns: ["*"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
