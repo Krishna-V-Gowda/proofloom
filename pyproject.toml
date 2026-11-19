@@ -12,7 +12,7 @@ license = { text = "MIT" }
 authors = [{ name = "Krishna V. Gowda" }]
 keywords = ["fintech", "reconciliation", "auditability", "human-in-the-loop", "reliability"]
 dependencies = [
-  "fastapi>=0.128,<0.129",
+  "fastapi>=0.165,<0.166",
   "httpx>=0.28,<0.29",
   "matplotlib>=3.10,<3.11",
   "numpy>=2.3,<2.4",
@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=9,<10"]
+dev = ["pytest>=9.0.3,<10"]
 
 [project.scripts]
 proofloom = "proofloom.cli:main"
