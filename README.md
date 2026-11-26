@@ -15,6 +15,8 @@
   <a href="docs/TECHNICAL_REPORT.md"><strong>Technical report</strong></a>
 </p>
 
+> **See it run live:** your browser rebuilds settlement `set_demo_04` from its 21 payments and refuses the close over a ₹1.37 gap. [Open the live proof](https://krishna-v-gowda.github.io/systems/proofloom.html). Part of [Krishna V. Gowda's portfolio](https://krishna-v-gowda.github.io/).
+
 ![Proofloom technical cover](assets/cover.svg)
 
 ## The proposition
