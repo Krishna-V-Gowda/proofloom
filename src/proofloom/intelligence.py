@@ -8,7 +8,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import hashlib
 import json
-from typing import Iterable, Sequence
+from typing import Sequence
 
 import numpy as np
 from sklearn.linear_model import LogisticRegression

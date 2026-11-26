@@ -1,5 +1,5 @@
 from proofloom.data import generate_evaluation_dataset
-from proofloom.evaluation import group_predictions, run_evaluation
+from proofloom.evaluation import run_evaluation
 from proofloom.intelligence import AmbiguityModel
 
 

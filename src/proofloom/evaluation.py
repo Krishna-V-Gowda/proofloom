@@ -2,14 +2,12 @@
 from __future__ import annotations
 
 from collections import defaultdict
-from dataclasses import asdict
 import csv
 import json
 from pathlib import Path
 import platform
 import random
-import time
-from typing import Any, Iterable, Sequence
+from typing import Any, Sequence
 
 import numpy as np
 from sklearn.metrics import (
@@ -21,7 +19,7 @@ from sklearn.metrics import (
     roc_auc_score,
 )
 
-from .data import EvaluationDataset, EvaluationPair, generate_evaluation_dataset
+from .data import EvaluationPair, generate_evaluation_dataset
 from .features import compute_evaluation_features, normalize_reference
 from .intelligence import AmbiguityModel
 
@@ -181,7 +179,6 @@ def evaluate_policy(
             top = candidates[0]
             runner_up = candidates[1]["score"] if len(candidates) > 1 else 0.0
             pair = top["pair"]
-            features = top["features"]
             # Financial policy remains deterministic. The model can only own a
             # candidate that is a credit, timely, near-exact in amount and
             # decisively above the validation-selected threshold.

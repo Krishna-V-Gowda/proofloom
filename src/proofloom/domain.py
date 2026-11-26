@@ -6,7 +6,7 @@ mutating the source evidence.
 """
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, field, is_dataclass
+from dataclasses import asdict, dataclass, is_dataclass
 from datetime import date, datetime, timezone
 from enum import StrEnum
 from typing import Any, Iterable, Mapping, Sequence
