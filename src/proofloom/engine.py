@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import replace
-from datetime import datetime, timezone
+from datetime import datetime
 from itertools import combinations
 from typing import Iterable, Sequence
 import re

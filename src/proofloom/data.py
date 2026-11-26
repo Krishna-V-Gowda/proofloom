@@ -6,7 +6,6 @@ from datetime import date, datetime, timedelta, timezone
 import hashlib
 import json
 import random
-from typing import Iterable, Sequence
 
 from .domain import BankLine, Direction, HeroDataset, Payment, Refund, Settlement, WebhookDelivery, to_primitive
 
@@ -70,7 +69,7 @@ def generate_hero_dataset(seed: int = HERO_SEED) -> HeroDataset:
         fees = _partition_nonnegative(fee_total, 21, rng)
         taxes = _partition_nonnegative(tax_total, 21, rng)
         settlement_payments: list[Payment] = []
-        for item_index, (amount, fee, tax) in enumerate(zip(amounts, fees, taxes, strict=True)):
+        for amount, fee, tax in zip(amounts, fees, taxes, strict=True):
             payment = Payment(
                 payment_id=f"pay_demo_{payment_counter:03d}",
                 settlement_id=sid,
